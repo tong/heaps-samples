@@ -1,0 +1,7 @@
+-main App
+-lib heaps
+-js app.js
+#-hl app.hl
+#-lib hlsdl
+-dce full
+-debug
