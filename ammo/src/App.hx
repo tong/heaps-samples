@@ -1,11 +1,12 @@
 
+import js.html.CanvasElement;
 import h3d.mat.Material;
 import h3d.prim.Cube;
 import h3d.Quat;
 import h3d.scene.*;
-import h3d.scene.fwd.*;
 import hxd.Key;
 import hxd.Res;
+import js.Browser.document;
 import js.Browser.window;
 import js.html.Worker;
 
@@ -39,8 +40,6 @@ class App extends hxd.App {
 
 		var tex = hxd.Res.checker_rough.toTexture();
 		boxMaterial = h3d.mat.Material.create(tex);
-		boxMaterial.shadows = true;
-		boxMaterial.mainPass.enableLights = true;
 
 		boxPrim = new h3d.prim.Cube( boxSize, boxSize, boxSize, true );
 		boxPrim.unindex();
@@ -64,6 +63,8 @@ class App extends hxd.App {
 		text.textColor = 0xffffff;
 		text.x = 2;
 		text.text = Std.string( boxes.length );
+
+		window.addEventListener('resize',handleResize);
 	}
 
 	function reset() {
@@ -93,6 +94,14 @@ class App extends hxd.App {
 		}
 	}
 
+	function handleResize(e) {
+		//var canvas : CanvasElement = cast document.querySelector("canvas");
+		//canvas.width = window.innerWidth;
+		//canvas.height = window.innerHeight;
+		//engine.resize(window.innerWidth, window.innerHeight );
+		//s2d.checkResize();
+	}
+
 	function onPhysics(e) {
 		var data : Dynamic = e.data;
 		var j = 0;
@@ -104,8 +113,10 @@ class App extends hxd.App {
 		}
 	}
 
+	
+
 	static function main() {
-		h3d.mat.MaterialSetup.current = new h3d.mat.PbrMaterialSetup();
+		//h3d.mat.MaterialSetup.current = new h3d.mat.PbrMaterialSetup();
 		Res.initEmbed();
 		new App();
 	}
