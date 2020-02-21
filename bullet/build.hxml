@@ -1,0 +1,8 @@
+-js bin/app.js
+-main App
+-cp src
+-lib heaps
+-lib heaps-tools
+-dce full
+-debug
+--macro includeFile("ammo.js")
