@@ -1,4 +1,4 @@
 _*
 *.hl
-*/app.js*
+*app.js*
 .tmp
