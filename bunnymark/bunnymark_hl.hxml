@@ -1,0 +1,8 @@
+-hl bunnymark.hl
+#-D hl_ver=1.9.0
+-main Bunnymark
+-lib heaps
+-lib hlsdl
+-dce full
+-debug
+-D windowSize=600x600

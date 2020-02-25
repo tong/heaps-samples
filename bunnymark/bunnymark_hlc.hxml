@@ -1,0 +1,8 @@
+-hl out/main.c
+-main Bunnymark
+-lib heaps
+-lib hlsdl
+-dce full
+-debug
+-D windowSize=600x600
+-cmd cc -O3 -std=c11 -I out out/main.c -o bunnymark /usr/local/lib/sdl.hdll /usr/local/lib/ui.hdll /usr/local/lib/fmt.hdll /usr/local/lib/openal.hdll -lhl -lSDL2 -lm -lopenal -lGL
