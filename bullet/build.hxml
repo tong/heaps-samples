@@ -3,6 +3,7 @@
 -cp src
 -lib heaps
 -lib heaps-tools
+-lib haxebullet
 -dce full
 -debug
 --macro includeFile("ammo.js")
