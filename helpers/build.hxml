@@ -1,0 +1,9 @@
+-js bin/app.js
+-main App
+-lib heaps
+-lib heaps-tools
+-cp src
+#-hl app.hl
+#-lib hlsdl
+-dce full
+-debug
