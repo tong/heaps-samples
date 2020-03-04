@@ -1,4 +1,4 @@
--js bin/app.js
+-js app.js
 -main App
 -cp src
 -lib heaps
@@ -6,4 +6,4 @@
 -lib haxebullet
 -dce full
 -debug
---macro includeFile("ammo.js")
+-D bullet_js_include

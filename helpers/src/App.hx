@@ -69,12 +69,18 @@ class App extends hxd.App {
 			new PointLightHelper( l );
 		}
 
+		/*
 		var cache = new h3d.prim.ModelCache();
 		var prim = cache.loadModel( Res.diamond6S );
 		var diamond = prim.toMesh();
 		diamond.setPosition( 3, 3, 3 );
 		s3d.addChild( diamond );
 		new BoxHelper( diamond, s3d );
+
+		trace(diamond);
+		*/
+		
+		//new VertexNormalsHelper( cast cube.primitive );
 	}
 
 	override function update( dt : Float ) {

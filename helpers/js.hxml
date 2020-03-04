@@ -1,4 +1,4 @@
--js bin/app.js
+-js app.js
 -main App
 -lib heaps
 -lib heaps-tools
