@@ -1,5 +1,11 @@
 _*
 *.hl
 *app.js*
-*/out/
 .tmp
+
+*/
+!ammo/
+!bullet/
+!bunnymark/
+!helpers/
+!primitives/
