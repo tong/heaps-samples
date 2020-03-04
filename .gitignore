@@ -8,4 +8,4 @@ _*
 !bullet/
 !bunnymark/
 !helpers/
-!primitives/
+#!primitives/
